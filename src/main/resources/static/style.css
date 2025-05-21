@@ -1,0 +1,621 @@
+/*body 
+{
+    background-color: lightgray;
+}*/
+
+.navigatorControls a
+{
+  color: black;
+  /*border: 3px solid green;*/
+}
+
+/*.navigatorControls
+{
+    color:black;
+}*/
+
+.navigatorControls a:visited, a:link
+{
+    color:blue;
+    text-decoration: underline;
+}
+
+/*.navigatorControls a:link 
+{
+    color:blue;
+    text-decoration: underline;
+}
+*/
+
+.navigatorControls a:active 
+{
+    color:red;
+    text-decoration:none;
+}
+
+/*.navigatorControls a:active
+{
+    
+}*/
+
+.headerTable
+{
+    width: 100%;
+    /*border: 3px solid purple;*/
+}
+
+.headerPadding
+{
+    width: 45%;
+    /*border: 1px solid black;*/
+    text-align: right;
+}
+
+.headingPaddingLeft
+{
+    width: 45%;
+    /*border: 1px solid black;*/
+    text-align: left;
+}
+
+.headingPaddingRight
+{
+    width: 45%;
+    /*border: 1px solid black;*/
+    text-align: right;
+}
+
+.loginTable
+{
+    width: 100%;
+    /*border: 10px solid;*/
+}
+
+.loginTablePaddingTdRight
+{
+    width: 45%;
+    /*border: 1px solid black;*/
+    text-align: left;
+}
+
+.loginTablePaddingTdLeft
+{
+    width: 45%;
+    /*border: 1px solid black;*/
+    text-align: right;
+}
+
+.loginTableLableTd
+{
+    width: 5%;
+    text-align: right;
+}
+
+.loginTableInputTd
+{
+    width: 15%;
+    font-size: larger;
+}
+
+.loginTableAppName
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.loginTableButton
+{
+    width: 100%;
+    height: 50px;
+}
+
+.preferenceButton
+{
+    width: 100%;
+    height: 50px;
+}
+
+.loginLabelSize
+{
+    font-size: x-large;   
+}
+
+.loginTableEmptyRow
+{
+    height: 25px;
+}
+
+input[type="text"]
+{
+    font-size: x-large;
+}
+
+input[type="password"]
+{
+    font-size: x-large;
+}
+
+.footer
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footContent
+{
+    width: 20%;
+}
+.content
+{
+    /*background-color: green;*/
+    height: 75vh; /* originally 67vh */
+    /*border: 5px solid orange;*/
+}
+
+.mainHeight
+{
+    height: 100%;
+}
+
+.padding
+{
+    /*border: 3px solid red;*/
+    height: 15vh;
+    /*background-color: green*/
+}
+
+ul 
+{
+    list-style-image: url('tjabal logo bullet 2.png');
+}
+
+.navbar
+{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.navbarSelected
+{
+    background-color: chocolate;
+    width: 80px;
+    text-align: center;
+    /*border: 3px solid red;*/
+}
+
+.adminSelected
+{
+    background-color: chocolate;
+    text-align: center;
+    width: 3%;
+}
+
+.navbarElement
+{
+    width: 80px;
+    text-align: center;
+    /*border: 3px solid yellow;*/
+    /*color: burlywood;*/
+}
+
+.navbarSpaceElement
+{
+    width: 60%;
+    /*border: 3px solid yellow;*/
+}
+
+.navbarElementID
+{
+/*    width: 80px;*/
+    /*border: 3px solid yellow;*/
+}
+
+.userIdElement
+{
+    text-align: center;
+    /*border: 3px solid yellow;*/
+}
+
+/*.navLinks
+{
+    color: burlywood;
+}*/
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.studentTable
+{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 53vh;
+    overflow: scroll;
+}
+
+.studentTableUserProfile
+{
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 61vh;
+}
+
+.studentCourses
+{
+    width:25%;
+    /*border: 1px solid black;*/
+}
+
+.matchList
+{
+    width: 30%;
+    /*border: 1px solid black;*/
+    height: 57vh;
+}
+
+.matchListRemainder
+{
+    /*border: 1px solid black;*/
+    height: 57vh;
+    width: 17%;
+}
+
+.studentSessions
+{
+    width:25%;
+    /*border: 1px solid black;*/
+}
+
+.studentSessionDetails
+{
+    /*border: 1px solid black;*/
+}
+
+.studentSessionDetailRows
+{
+    /*border: 1px solid black;*/
+    width: 50%;
+    height: 3vh;
+}
+
+.studentSessionDetailsTable
+{
+    /*border: 1px solid orange;*/
+    width: 100%;
+    height: 54vh;
+    vertical-align: top;
+}
+
+.studentAddSessionDetailsTable
+{
+    /*border: 1px solid orange;*/
+    width: 100%;
+    height: 54vh;
+    float: right;
+}
+.temp
+{
+    /*border: 1px solid black;*/
+    height: 10px;
+}
+
+.addSessionTable
+{
+    width: 100%;
+    height: 20vh;
+    /*border: 1px solid red;*/
+}
+
+.matchTable
+{
+    width: 100%;
+    /*border: 1px solid blue;*/
+    height: 58vh;
+}
+
+.matchTableBottomPadding
+{
+    width: 100%;
+    /*border: 1px solid blue;*/
+    height: 41vh;
+}
+
+.preferenceTableLable
+{
+    /*border: 1px solid red;*/
+    width: 20%;
+}
+
+.tempBorder
+{
+    border: 3px solid darkgreen;
+}
+
+.navigatorControls
+{
+    /*border: 3px solid blue;*/
+    width: 100%;
+    color: black;
+    align-content: center;
+}
+
+.choiceWidth
+{
+    width: 100%;
+}
+
+.profileSpaceDivide
+{
+    width: 35%;
+    /*border: 1px solid orange;*/
+}
+
+.tableWidth
+{
+    width: 100%;
+    /*border: 1px solid orange;*/
+}
+
+.profileLabels
+{
+    text-align: right;
+    /*border: 1px solid purple;*/
+}
+
+.profilePadding
+{
+    height: 25vh;
+    /*border: 1px solid turquoise;*/
+}
+
+.signedInTutorSession
+{
+    width: 25%;
+    /*border: 1px solid teal;*/
+}
+
+.tutorTableWidth
+{
+    width: 100%;
+    height: 54vh;
+    /*border: 1px solid orange;*/
+}
+
+.tutorAvailTableWidth
+{
+    width: 100%;
+    height: 40vh;
+    /*border: 1px solid blue;*/
+}
+.tutorSessionsConfig
+{
+    height: 54vh;
+    /*border: 1px solid darkolivegreen;*/
+}
+
+.tutorAvailabilityConfig
+{
+    height: 30vh;
+    /*border: 1px solid darkolivegreen;*/
+    width: 30%;
+}
+
+.tutorSessionDetailsPadding
+{
+    height: 40vh;
+    /*border: 1px solid saddlebrown;*/
+}
+
+.tutorSessionDetails
+{
+    /*border: 1px solid purple;*/
+    width: 32%;
+    text-align: right;
+}
+
+.tutorAvailabilityAddPadding
+{
+    height: 30vh;
+    /*border: 1px solid slategrey;*/
+}
+
+.adminSpace
+{
+    width: 5%;
+    /*border: 1px solid purple;*/
+}
+
+.adminDivider
+{
+    width: 3%;
+    /*border: 1px solid purple;*/
+    text-align: center;
+}
+
+.adminSession
+{
+    /*border: 3px solid purple;*/
+    width: 32%;
+    text-align: right;
+    height: 57vh;
+    overflow: scroll;
+}
+
+.rowTemp
+{
+    overflow: scroll;
+}
+
+.adminaddRemoveUserCell
+{
+    border: 2px solid purple;
+    width: 40%;
+    text-align: right;
+    height: 50vh;
+}
+
+.adminCourseTable
+{
+    height: 57vh;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+
+.adminAddRemoveUsersTable
+{
+    height: 58vh;
+    width: 100%;
+    /*border: 1px solid blue;*/
+}
+
+.adminPairingsTable
+{
+    height: 57vh;
+    width: 100%;
+    /*border: 1px solid sienna;*/
+}
+
+.adminCourseCell
+{
+    border: 1px solid orangered;
+    width: 25%;
+}
+
+.adminCourseButtonsCell
+{
+    border: 1px solid orangered;
+    width: 50%;
+    text-align: center;
+}
+
+.adminCourseButtons
+{
+    width: 30%;
+    height: 30px;
+}
+
+.adminCourseCellSpacer
+{
+    height: 20px;
+    /*border: 1px solid red;*/
+}
+
+.adminCourseCellTailSpace
+{
+    height: 20vh;
+    /*border: 1px solid red;*/
+}
+
+.adminCourseCellLabels
+{
+    text-align: center;
+    /*border: 1px solid purple;*/
+}
+
+.adminUserTableButtons
+{
+    width: 100%;
+    height: 30px;
+}
+
+.adminPairSpace
+{
+    height: 33vh;
+    /*border: 1px solid purple;*/
+}
+
+.adminSupportSpace
+{
+    height: 43vh;
+    /*border: 1px solid purple;*/
+}
+
+.adminSupportOptionCell
+{
+    /*border: 1px solid purple;*/
+    width: 32%;
+    text-align: right;
+    /*height: 2vh;*/
+}
+
+.adminStudentSessionsTdCells
+{
+    /*border: 1px solid purple;*/
+    width: 20%;
+    height: 56vh;
+}
+
+.studentSessionsRowDivider
+{
+    width: 25%;
+    /*border: 1px solid darkblue;*/
+}
+
+.adminStudentSessionsTailSpace
+{
+    height: 43vh;
+    /*border: 1px solid purple;*/
+}
+
+.adminReportingButtonsColumn
+{
+    width:10%;
+    /*border: 1px solid gold;*/
+}
+
+.adminReportingButtonsSpacer
+{
+    /*border: 1px solid gold;*/
+    height: 35vh;
+}
+
+.logoutTextColour
+{
+    color: white;
+    text-align: center;
+    /*border: 3px solid Yellow;*/
+}
+
+.adminCoursesList
+{
+    width: 100%;
+    overflow: scroll;
+    /*border: 3px solid Yellow;*/
+}
+
+.courseDetailsRow
+{
+    width: 100%;
+    /*border: 3px solid Yellow;*/
+    text-align: center;
+}
+
+.userRow
+{
+    border: 3px solid Yellow;
+    background-color: purple;
+}
+
+.userDetailsRow
+{
+    width: 30%;
+    /*border: 3px solid Yellow;*/
+    text-align: center;
+}
+
+.adminUsersList
+{
+    width: 100%;
+    /*border: 3px solid green;*/
+}
+
+.userSpacer
+{
+    width: 5%;
+    /*border: 3px solid brown;*/
+}

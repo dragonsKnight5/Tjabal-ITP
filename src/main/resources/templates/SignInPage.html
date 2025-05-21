@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tjabal ITP Login</title>
+       <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <div th:replace="~{header :: header}"></div>
+        <div class="content">
+            <form th:action="@{/login}" method="post" role="form" th:object="${user}">
+                <table class="loginTable">
+                    <tr class="padding">
+                        <td colspan="4">
+                            <div class="padding">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td class="loginTableLableTd">
+                            <span class="loginLabelSize">Username:</span>
+                        </td>
+                        <td class="loginTableInputTd">
+                            <input type="text" name="userID" size="30" required />
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr class="loginTableTr">
+                        <td>
+
+                        </td>
+                        <td class="loginTableLableTd">
+                            <span class="loginLabelSize">Password:</span>
+                        </td>
+                        <td>
+                            <input type="password" name="password" size="30" required />
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2" class="loginTableEmptyRow">
+                            note: username and password are case sensitive
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td colspan="2">
+                            <!--<button type="submit" class="loginTableButton" />-->
+                            <input type="submit" name="submit" value="Sign In" class="loginTableButton"/>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="padding" colspan="4">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div th:replace="~{footer :: footer}"></div>
+    </body>
+</html>

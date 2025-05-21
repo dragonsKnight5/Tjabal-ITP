@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Copyright 2022 James.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tjabal ITP</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <table class="headerTable">
+            <tr>
+                <td class="headingPaddingLeft">
+                    <img src="Message Stick Logo round.png" width="219" height="121" alt="message stick logo"/>
+                </td>
+                <td colspan="2" class="loginTableAppName">
+                    Tjabal ITP <br>Message Stick
+                </td>
+                <td class="headingPaddingRight">
+                    <img src="tjabal logo 4.jpg" width="219" height="123" alt="tjabal logo"/>
+                </td>
+            </tr>
+        </table>
+        
+        <p th:text="'Current date and time: ' + ${currentDateTime}"></p>
+        
+        <table class="footer">
+            <tr>
+                <td class="footContent"></td>
+                <td class="footContent">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="http://www.anu.edu.au/contact">Contact ANU</a>
+                            </li>
+                            <li>
+                                <a href="http://www.anu.edu.au/copyright">Copyright</a>
+                            </li>
+                            <li>
+                                <a href="http://www.anu.edu.au/disclaimer">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="http://www.anu.edu.au/privacy">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="http://www.anu.edu.au/freedom-of-information">Freedom of Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="footContent">
+                    <div>
+                        +61 2 6125 5111
+                        <br>The Australian National University, Canberra
+                        <br>CRICOS Provider : 00120C
+                        <br>ABN : 52 234 063 906
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div>
+                        <table class="headerTable">
+                            <tr>
+                                <td>
+                                    <a href="http://www.anu.edu.au/about/partnerships/edx">
+                                        <img src="2x_edx.png" alt="edx" width="50" height="30" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="http://www.anu.edu.au/about/partnerships/association-of-pacific-rim-universities">
+                                        <img src="2x_apru.png" alt="apru" width="90" height="30" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="http://www.anu.edu.au/about/partnerships/international-alliance-of-research-universities">
+                                        <img src="2x_iaru.png" alt="iaru" width="115" height="30" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="http://www.anu.edu.au/about/partnerships/group-of-eight">
+                                        <img src="2x_GroupOf8.png" alt="group of 8" width="100" height="60" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="footContent"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

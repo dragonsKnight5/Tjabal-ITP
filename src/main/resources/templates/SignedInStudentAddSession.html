@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Copyright 2022 James.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html>
+    <head>
+        <!--<title wicket:id="title"/>-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+    <wicket:extend>
+        <div class="content">
+            <div class="navbar">
+                <table class="headerTable">
+                    <tr>
+                        <td class="navbarSelected">Student</td>
+                        <td class="navbarElement"><a wicket:id="tutor">Tutor</a></td>
+                        <td class="navbarElement"><a wicket:id="user profile">User Profile</a></td>
+                        <td class="navbarElement"><a wicket:id="admin page">Admin</a></td>
+                        <td class="navbarElement"></td>
+                        <td class="navbarElement"></td>
+                        <td class="navbarSpaceElement"></td>
+                        <td><div wicket:id="userID" class="userIdElement"/></td>
+                        <td class="logoutTextColour"><a wicket:id="logOutButton">Log Out </a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="navbarSelected">Add Session</td>
+                        <td colspan="2" class="navbarElement"><a wicket:id="studentSessionDeleteLink">Delete Session</a></td>
+                        <td colspan="2" class="navbarElement"><a wicket:id="studentMatchPreferenceLink">Match Preference</a></td>
+                        <td colspan="3" class="navbarElement"></td>
+                    </tr>
+                </table>
+            </div>
+            <table class="studentTable">
+                <tr>
+                    <td>
+                        <Strong>Courses</Strong>
+                    </td>
+                    <td>
+                        <Strong>Sessions</Strong>
+                    </td>
+                    <td>
+                        <Strong>Add Session</Strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="studentCourses">
+                        <div wicket:id="courseListView" />
+                    </td>
+                    <td class="studentSessions">
+                        <div wicket:id="sessionsListView" />
+                    </td>
+                    <td class="studentSessionDetails">
+                        <table class="studentSessionDetailsTable">
+                            <tr>
+                                <td class="studentSessionDetailRows">
+                                    <form wicket:id="addSessionForm">
+                                        <table class="addSessionTable">
+                                            <tr>
+                                                <td class="studentSessionDetailRows">date</td>
+                                                <td class="studentSessionDetailRows"><input type="date" wicket:id="sessionDate"></input></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="studentSessionDetailRows">start time</td>
+                                                <td class="studentSessionDetailRows"><div wicket:id="startTime"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="studentSessionDetailRows">finish time</td>
+                                                <td class="studentSessionDetailRows"><div wicket:id="finishTime"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="studentSessionDetailRows">tutor</td>
+                                                <td class="studentSessionDetailRows"><select class="choiceWidth" wicket:id="tutorList">tutor name input</select></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="studentSessionDetailRows">course code</td>
+                                                <td class="studentSessionDetailRows"><select class="choiceWidth" wicket:id="courseList">code input</select></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="studentSessionDetailRows">course name</td>
+                                                <td class="studentSessionDetailRows"><select class="choiceWidth" wicket:id="courseNameList">course name selector</select></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="studentSessionDetailRows">
+                                                    <input type="submit" name="submit" value="Add Session" class="loginTableButton" wicket:id="addButton"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr  rowspan="2">
+                                <td class="studentSessionDetails">
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </wicket:extend>
+</body>
+</html>

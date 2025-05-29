@@ -8,7 +8,7 @@
     <body>
         <div th:replace="~{header :: header}"></div>
         <div class="content">
-            <form th:action="@{/login}" method="post" role="form" th:object="${user}">
+            <form th:action="@{/login}" method="POST">
                 <table class="loginTable">
                     <tr class="padding">
                         <td colspan="4">
@@ -25,7 +25,7 @@
                             <span class="loginLabelSize">Username:</span>
                         </td>
                         <td class="loginTableInputTd">
-                            <input type="text" name="userID" size="30" required />
+                            <input type="text" name="userID" id="username" size="30" required />
                         </td>
                         <td>
 
@@ -39,7 +39,7 @@
                             <span class="loginLabelSize">Password:</span>
                         </td>
                         <td>
-                            <input type="password" name="password" size="30" required />
+                            <input type="password" name="password" id="password" size="30" required />
                         </td>
                         <td>
 

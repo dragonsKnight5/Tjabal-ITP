@@ -23,7 +23,20 @@ public class SecurityUser implements UserDetails
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() 
     {
-        String role = student.getRole();
+        String role = new String();
+        if (student.getAdministrator())
+        {
+            role = "Administrator";
+        }
+        else if (student.getStudent())
+        {
+            role = "Student";
+        }
+        else if (student.getTutor())
+        {
+            role = "tutor";
+        }
+        
         String prefixedRole = role.startsWith("ROLE_") ? role : "ROLE_" + role;
         return List.of(new SimpleGrantedAuthority(prefixedRole));
     }

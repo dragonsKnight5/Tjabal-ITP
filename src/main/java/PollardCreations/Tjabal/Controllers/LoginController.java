@@ -13,7 +13,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 public class LoginController
 {
-    @GetMapping("/")
+//    @GetMapping("/")
+    @GetMapping("signInPage")
     public String home() 
     {
         return "SignInPage";
@@ -24,16 +25,18 @@ public class LoginController
                                @RequestParam("password") String password,
                                RedirectAttributes redirectAttributes) 
     {
+        System.out.println("Username: " + username);
+        System.out.println("Password: " + password);
+        
         // Implement authentication logic here (e.g., using Spring Security)
         if (isValidUser(username, password)) 
         {
-          
             return "redirect:/home"; 
         } 
         else 
         {
            
-             redirectAttributes.addFlashAttribute("error", "Invalid username or password");
+            redirectAttributes.addFlashAttribute("error", "Invalid username or password");
             return "redirect:/login?error";
         }
     }

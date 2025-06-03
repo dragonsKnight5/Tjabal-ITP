@@ -8,6 +8,11 @@
     <body>
         <div th:replace="~{header :: header}"></div>
         <div class="content">
+            <div th:if="${param.error}">
+                <div class="error-message">
+                    <p>Invalid Username or Password</p>
+                </div>
+            </div>
             <form th:action="@{/login}" method="POST">
                 <table class="loginTable">
                     <tr class="padding">

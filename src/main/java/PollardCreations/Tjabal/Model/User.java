@@ -31,8 +31,10 @@ public class User
     private String lastName;
     private String email;
     private String password;
-    
-    private String role;
+    private Boolean administrator;
+    private Boolean tutor;
+    private Boolean student;
+//    private String role;
 
     
     // setters and getters
@@ -85,14 +87,46 @@ public class User
     {
         this.password = password;
     }
+    
+    
 
-    public String getRole()
+//    public String getRole()
+//    {
+//        return role;
+//    }
+//
+//    public void setRole(String role)
+//    {
+//        this.role = role;
+//    }
+
+    public Boolean getAdministrator()
     {
-        return role;
+        return administrator;
     }
 
-    public void setRole(String role)
+    public void setAdministrator(Boolean administrator)
     {
-        this.role = role;
+        this.administrator = administrator;
+    }
+
+    public Boolean getTutor()
+    {
+        return tutor;
+    }
+
+    public void setTutor(Boolean tutor)
+    {
+        this.tutor = tutor;
+    }
+
+    public Boolean getStudent()
+    {
+        return student;
+    }
+
+    public void setStudent(Boolean student)
+    {
+        this.student = student;
     }
 }

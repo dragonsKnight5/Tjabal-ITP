@@ -4,16 +4,14 @@ import PollardCreations.Tjabal.Model.User;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.stereotype.Repository;
-//import org.springframework.stereotype.Repository;
-//import org.springframework.data.repository.CrudRepository;
+
 /**
  *
  * @author james
  */
 
-//@EnableJpaRepositories
-@Repository
+@EnableJpaRepositories
+//@Repository
 public interface UserRepository extends JpaRepository<User, Integer> 
 {
     Optional<User> findByUserID(String username);

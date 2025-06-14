@@ -32,15 +32,15 @@ public class SecurityConfig
                 .cors(Customizer.withDefaults())
                 .authorizeHttpRequests
                     (auth -> auth
-                        .requestMatchers("style.css").permitAll()
-                        .requestMatchers("/signInPage.html").permitAll()
-                        .requestMatchers("/error.html").permitAll()
+                        .requestMatchers("/style.css").permitAll()
+                        .requestMatchers("/signInPage").permitAll()
+                        .requestMatchers("/error").permitAll()
                         .anyRequest().authenticated()
                     )
                 .formLogin(form -> form
                         .loginPage("/signInPage").permitAll()
 //                        .loginProcessingUrl("/SignInPage")
-                        .defaultSuccessUrl("/signedInStudentAddSession.html", true)
+                        .defaultSuccessUrl("/signedInStudentAddSession", true)
                         .permitAll()
 //                        .failureUrl("/SignInPage?error=true")
                 )
